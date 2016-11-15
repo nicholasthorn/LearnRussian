@@ -1,0 +1,500 @@
+﻿1. 	человек 	man, person	masculine
+2. 	год 	year	masculine
+3. 	время 	time	neuter
+4. 	рука 	hand, arm	feminine
+5. 	дело 	business, affair, matter	neuter
+6. 	раз 	time, once, since	masculine
+7. 	глаз 	eye; sight	masculine
+8. 	жизнь 	life	feminine
+9. 	день 	day	masculine
+10. 	голова 	head, mind, brains	feminine
+11. 	друг 	friend	masculine
+12. 	дом 	house, home	masculine
+13. 	слово 	word	neuter
+14. 	место 	place; seat	neuter
+15. 	лицо 	face; person	neuter
+16. 	сторона 	side, party	feminine
+17. 	нога 	foot, leg	feminine
+18. 	дверь 	door	feminine
+19. 	работа 	work, job	feminine
+20. 	земля 	earth, land, soil	feminine
+21. 	конец 	end, distance	masculine
+22. 	час 	hour, time	masculine
+23. 	голос 	voice	masculine
+24. 	город 	town, city	masculine
+25. 	вода 	water	feminine
+26. 	стол 	table, desk; board	masculine
+27. 	ребёнок 	child, kid, infant	masculine
+28. 	сила 	strength, force	feminine
+29. 	отец 	father	masculine
+30. 	женщина 	woman	feminine
+31. 	машина 	car, machine, engine	feminine
+32. 	случай 	case, occasion, incident	masculine
+33. 	ночь 	night	feminine
+34. 	мир 	world, peace	masculine
+35. 	вид 	appearance, look, view	masculine
+36. 	ряд 	row, line	masculine
+37. 	начало 	beginning, origin, source	neuter
+38. 	вопрос 	question, matter, problem	masculine
+39. 	война 	war	feminine
+40. 	деньги 	money	plural, all genders
+41. 	минута 	minute, moment	feminine
+42. 	жена 	wife	feminine
+43. 	правда 	truth	feminine
+44. 	страна 	country	feminine
+45. 	свет 	light; world	masculine
+46. 	мать 	mother	feminine
+47. 	товарищ 	comrade, friend	masculine
+48. 	дорога 	road, way, journey	feminine
+49. 	окно 	window, windowsill	neuter
+50. 	комната 	room	feminine
+51. 	Москва 	Moscow	feminine
+52. 	часть 	part, share, department	feminine
+53. 	книга 	book	feminine
+54. 	улица 	street	feminine
+55. 	душа 	soul, spirit	feminine
+56. 	утро 	morning	neuter
+57. 	вечер 	evening	masculine
+58. 	пол 	floor; sex	masculine
+59. 	народ 	people, nation	masculine
+60. 	плечо 	shoulder, upper arm	neuter
+61. 	бог 	god	masculine
+62. 	взгляд 	look, glance; view	masculine
+63. 	палец 	finger, toe	masculine
+64. 	Россия 	Russia	feminine
+65. 	история 	history, story, event	feminine
+66. 	мысль 	thought, idea	feminine
+67. 	сын 	son	masculine
+68. 	лес 	forest	masculine
+69. 	пора 	time; pore	feminine
+70. 	имя 	name	neuter
+71. 	разговор 	talk, conversation	masculine
+72. 	тело 	body	neuter
+73. 	стена 	wall	feminine
+74. 	право 	right	neuter
+75. 	старик 	old man	masculine
+76. 	мама 	mummy, mum	feminine
+77. 	путь 	way, track, path	masculine
+78. 	месяц 	month	masculine
+79. 	спина 	back	feminine
+80. 	язык 	tongue, language	masculine
+81. 	сердце 	heart	neuter
+82. 	мальчик 	boy	masculine
+83. 	небо 	sky	neuter
+84. 	смерть 	death	feminine
+85. 	девушка 	girl, miss	feminine
+86. 	образ 	shape, form, image	masculine
+87. 	письмо 	letter	neuter
+88. 	власть 	power	feminine
+89. 	воздух 	air	masculine
+90. 	брат 	brother	masculine
+91. 	отношение 	relationship, attitude	neuter
+92. 	система 	system	feminine
+93. 	квартира 	flat, apartment	feminine
+94. 	любовь 	love	feminine
+95. 	солдат 	soldier	masculine
+96. 	хозяин 	master, boss, host	masculine
+97. 	начальник 	chief, head, superior	masculine
+98. 	школа 	school	feminine
+99. 	парень 	boy, fellow, guy	masculine
+100. 	кровь 	blood	feminine
+101. 	солнце 	sun	neuter
+102. 	неделя 	week	feminine
+103. 	ребята 	guys, children	plural, all genders
+104. 	шаг 	step	masculine
+105. 	мужчина 	man, male	masculine
+106. 	нос 	nose	masculine
+107. 	внимание 	attention	neuter
+108. 	капитан 	captain, master	masculine
+109. 	ухо 	ear	neuter
+110. 	чувство 	feeling	neuter
+111. 	берег 	bank, shore, coast	masculine
+112. 	семья 	family	feminine
+113. 	генерал 	general	masculine
+114. 	момент 	moment, instant	masculine
+115. 	труд 	labour, work	masculine
+116. 	группа 	group	feminine
+117. 	муж 	husband	masculine
+118. 	движение 	movement	neuter
+119. 	порядок 	order	masculine
+120. 	ответ 	answer, reply	masculine
+121. 	газета 	newspaper	feminine
+122. 	помощь 	help	feminine
+123. 	собака 	dog	feminine
+124. 	дерево 	tree	neuter
+125. 	снег 	snow	masculine
+126. 	сон 	dream	masculine
+127. 	смысл 	sense, meaning, purpose	masculine
+128. 	двор 	yard, court	masculine
+129. 	форма 	form, shape, uniform	feminine
+130. 	возможность 	possibility, opportunity, chance	feminine
+131. 	общество 	society	neuter
+132. 	грудь 	breast, chest	feminine
+133. 	угол 	corner, angle	masculine
+134. 	чёрный 	black , black (man)	masculine
+135. 	век 	century, age	masculine
+136. 	карман 	pocket	masculine
+137. 	немец 	German (person)	masculine
+138. 	губа 	lip	feminine
+139. 	дядя 	uncle	masculine
+140. 	огонь 	fire	masculine
+141. 	писатель 	writer	masculine
+142. 	армия 	army	feminine
+143. 	состояние 	state, condition; fortune	neuter
+144. 	зуб 	tooth	masculine
+145. 	очередь 	line, queue, turn	feminine
+146. 	камень 	stone	masculine
+147. 	гость 	guest	masculine
+148. 	ветер 	wind	masculine
+149. 	рота 	company (military)	feminine
+150. 	закон 	law, act, statue	masculine
+151. 	море 	sea	neuter
+152. 	гора 	mountain, hill	feminine
+153. 	врач 	physician, doctor	masculine
+154. 	край 	border, edge; land, country	masculine
+155. 	река 	river	feminine
+156. 	мера 	measure, step	feminine
+157. 	действие 	action, effect	neuter
+158. 	вещь 	thing	feminine
+159. 	ход 	move	masculine
+160. 	боль 	pain	feminine
+161. 	судьба 	fate, fortune, destiny	feminine
+162. 	причина 	cause, reason, motive	feminine
+163. 	черта 	line, boundary; trait	feminine
+164. 	девочка 	girl, little girl	feminine
+165. 	волос 	hair	masculine
+166. 	номер 	number, size, room, issue	masculine
+167. 	глава 	head, chief	feminine
+168. 	командир 	commander, commanding officer	masculine
+169. 	партия 	party	feminine
+170. 	проблема 	problem, issue	feminine
+171. 	страх 	fear	masculine
+172. 	бумага 	paper	feminine
+173. 	герой 	hero	masculine
+174. 	пара 	pair, couple	feminine
+175. 	государство 	State	neuter
+176. 	деревня 	village, country	feminine
+177. 	речь 	speech	feminine
+178. 	средство 	means, remedy	neuter
+179. 	положение 	position, posture, condition, state	neuter
+180. 	связь 	tie, bond; connection, relation	feminine
+181. 	класс 	class	masculine
+182. 	цель 	goal, object, target	feminine
+183. 	знать 	aristocracy, nobility, the élite	feminine
+184. 	профессор 	professor	masculine
+185. 	господин 	gentleman, Mr.	masculine
+186. 	счастье 	happiness, luck	neuter
+187. 	дух 	spirit	masculine
+188. 	план 	plan	masculine
+189. 	зал 	hall	masculine
+190. 	директор 	director, manager	masculine
+191. 	память 	memory	feminine
+192. 	результат 	result, outcome	masculine
+193. 	след 	track, footprint	masculine
+194. 	бутылка 	bottle	feminine
+195. 	условие 	condition, term	neuter
+196. 	ум 	mind, brains, intellect	masculine
+197. 	процесс 	process	masculine
+198. 	картина 	picture, painting	feminine
+199. 	центр 	center	masculine
+200. 	будущее 	future	neuter
+201. 	число 	number	neuter
+202. 	рубль 	ruble	masculine
+203. 	вера 	faith, belief	feminine
+204. 	удар 	blow, stroke	masculine
+205. 	телефон 	telephone	masculine
+206. 	колено 	knee	neuter
+207. 	коридор 	corridor, passage	masculine
+208. 	мужик 	muzhik, man	masculine
+209. 	автор 	author	masculine
+210. 	встреча 	meeting, reception	feminine
+211. 	кабинет 	study, room, office suite	masculine
+212. 	документ 	document	masculine
+213. 	самолет 	aircraft, aeroplane	masculine
+214. 	игра 	game, play	feminine
+215. 	рассказ 	story	masculine
+216. 	хлеб 	bread	masculine
+217. 	развитие 	development	neuter
+218. 	трубка 	tube, roll, pipe	feminine
+219. 	враг 	enemy	masculine
+220. 	доктор 	doctor	masculine
+221. 	ладонь 	palm	feminine
+222. 	наука 	science	feminine
+223. 	лейтенант 	lieutenant	masculine
+224. 	служба 	service, work	feminine
+225. 	счет 	bill, account	masculine
+226. 	кухня 	kitchen	feminine
+227. 	решение 	decision, conclusion	neuter
+228. 	молодая 	bride; young (as an adjective)	feminine
+229. 	роман 	novel, romance	masculine
+230. 	компания 	company	feminine
+231. 	течение 	current	neuter
+232. 	метр 	meter, metre	masculine
+233. 	институт 	institute	masculine
+234. 	интерес 	interest	masculine
+235. 	половина 	half	feminine
+236. 	качество 	quality	neuter
+237. 	бой 	battle, fight, combat	masculine
+238. 	шея 	neck	feminine
+239. 	идея 	idea	feminine
+240. 	трава 	grass	feminine
+241. 	дед 	grandfather, old man	masculine
+242. 	сознание 	consciousness	neuter
+243. 	родитель 	parent	masculine
+244. 	чай 	tea	masculine
+245. 	род 	family, clan, generation	masculine
+246. 	звук 	sound	masculine
+247. 	магазин 	shop, store	masculine
+248. 	президент 	president	masculine
+249. 	поэт 	poet	masculine
+250. 	спасибо 	gratitude, thanks	neuter
+251. 	болезнь 	illness, sickness, disease	feminine
+252. 	событие 	event	neuter
+253. 	кожа 	skin	feminine
+254. 	лист 	leaf, sheet	masculine
+255. 	слеза 	tear	feminine
+256. 	надежда 	hope	feminine
+257. 	литература 	literature	feminine
+258. 	оружие 	weapon	neuter
+259. 	запах 	smell, odour, scent	masculine
+260. 	роль 	role	feminine
+261. 	рост 	growth, increase; height	masculine
+262. 	природа 	nature	feminine
+263. 	точка 	dot, point	feminine
+264. 	звезда 	star	feminine
+265. 	фамилия 	surname	feminine
+266. 	характер 	character, disposition, temper	masculine
+267. 	офицер 	officer	masculine
+268. 	толпа 	crowd	feminine
+269. 	уровень 	level	masculine
+270. 	кресло 	chair	neuter
+271. 	баба 	woman, wife, old woman	feminine
+272. 	секунда 	second	feminine
+273. 	банк 	bank	masculine
+274. 	опыт 	experience	masculine
+275. 	сапог 	(high) boot	masculine
+276. 	правило 	rule	neuter
+277. 	стекло 	glass	neuter
+278. 	дочь 	daughter	feminine
+279. 	член 	member, limb	masculine
+280. 	десяток 	ten, dozens	masculine
+281. 	цветок 	flower	masculine
+282. 	желание 	wish	neuter
+283. 	дождь 	rain	masculine
+284. 	лоб 	forehead	masculine
+285. 	улыбка 	smile	feminine
+286. 	борьба 	fight, struggle	feminine
+287. 	ворот 	collar	masculine
+288. 	ящик 	box, case	masculine
+289. 	этаж 	floor, storey	masculine
+290. 	революция 	revolution	feminine
+291. 	сосед 	neighbour	masculine
+292. 	сестра 	sister	feminine
+293. 	ситуация 	situation	feminine
+294. 	количество 	quantity	neuter
+295. 	выход 	exit	masculine
+296. 	совет 	advice	masculine
+297. 	дурак 	fool, idiot	masculine
+298. 	союз 	union, alliance; conjunction	masculine
+299. 	лето 	summer	neuter
+300. 	граница 	border	feminine
+301. 	цвет 	colour, color	masculine
+302. 	свобода 	freedom	feminine
+303. 	стул 	chair	masculine
+304. 	поезд 	train	masculine
+305. 	музыка 	music	feminine
+306. 	тень 	shadow	feminine
+307. 	лошадь 	horse	feminine
+308. 	поле 	field	neuter
+309. 	тип 	type, model	masculine
+310. 	суд 	court, law-court	masculine
+311. 	площадь 	square, area	feminine
+312. 	радость 	gladness, joy	feminine
+313. 	возраст 	age	masculine
+314. 	орган 	organ, body	masculine
+315. 	карта 	map	feminine
+316. 	король 	king	masculine
+317. 	слава 	glory, fame	feminine
+318. 	полковник 	colonel	masculine
+319. 	бок 	side, flank	masculine
+320. 	цена 	price	feminine
+321. 	информация 	information	feminine
+322. 	мозг 	brain	masculine
+323. 	удовольствие 	pleasure	neuter
+324. 	воля 	will	feminine
+325. 	область 	oblast, province; field	feminine
+326. 	крыша 	roof	feminine
+327. 	дама 	lady, partner, queen	feminine
+328. 	сад 	garden, yard	masculine
+329. 	правительство 	government	neuter
+330. 	название 	name, title	neuter
+331. 	пример 	example	masculine
+332. 	зеркало 	mirrow	neuter
+333. 	дым 	smog	masculine
+334. 	факт 	fact	masculine
+335. 	рыба 	fish	feminine
+336. 	бабушка 	grandmother	feminine
+337. 	вино 	wine	neuter
+338. 	учитель 	teacher, instructor	masculine
+339. 	круг 	circle	masculine
+340. 	папа 	dad, daddy	masculine
+341. 	повод 	occastion, reason; bridle	masculine
+342. 	лагерь 	camp	masculine
+343. 	птица 	bird	feminine
+344. 	корабль 	ship	masculine
+345. 	мнение 	opinion	neuter
+346. 	зима 	winter	feminine
+347. 	километр 	kilometre, kilometer	masculine
+348. 	кровать 	bed	feminine
+349. 	лестница 	staircase	feminine
+350. 	детство 	childhood	neuter
+351. 	остров 	island	masculine
+352. 	статья 	article	feminine
+353. 	водка 	vodka	feminine
+354. 	темнота 	darkness	feminine
+355. 	станция 	station	feminine
+356. 	гражданин 	citizen	masculine
+357. 	команда 	team; command	feminine
+358. 	заболевание 	disease, illness	neuter
+359. 	живот 	stomach, belly	masculine
+360. 	тишина 	silence, stillness	feminine
+361. 	фронт 	front	masculine
+362. 	щека 	cheek	feminine
+363. 	район 	area, region	masculine
+364. 	выражение 	expression	neuter
+365. 	мешок 	bag, sack	masculine
+366. 	большинство 	majority	neuter
+367. 	управление 	operation, control	neuter
+368. 	приказ 	order	masculine
+369. 	куст 	bush	masculine
+370. 	художник 	painter, artist	masculine
+371. 	знак 	sign	masculine
+372. 	завод 	factory	masculine
+373. 	кулак 	fist	masculine
+374. 	стакан 	glass	masculine
+375. 	рот 	mouth	masculine
+376. 	лечение 	(medical) treatment, cure	neuter
+377. 	сутки 	day, twenty-four hours	plural, all genders
+378. 	операция 	operation, procedure, surgery	feminine
+379. 	пространство 	space, area	neuter
+380. 	одежда 	clothing	feminine
+381. 	кусок 	piece, bit, slice	masculine
+382. 	тема 	theme, subject, topic	feminine
+383. 	искусство 	art	neuter
+384. 	курс 	course, policy, rate of exchange	masculine
+385. 	чудо 	miracle, wonder	neuter
+386. 	ощущение 	sensation, feeling	neuter
+387. 	здание 	building	neuter
+388. 	милиция 	militia	feminine
+389. 	волна 	wave	feminine
+390. 	задача 	problem, task	feminine
+391. 	старуха 	old woman	feminine
+392. 	войско 	army, forces	neuter
+393. 	срок 	term, time	masculine
+394. 	ужас 	terror, horror	masculine
+395. 	материал 	material, fabric	masculine
+396. 	крик 	cry, shout, scream	masculine
+397. 	знание 	knowledge	neuter
+398. 	шум 	noise	masculine
+399. 	автомат 	automatic machine, machine gun, robot	masculine
+400. 	тетя 	aunt	feminine
+401. 	впечатление 	impression, effect	neuter
+402. 	пауза 	pause	feminine
+403. 	глубина 	depth, intensity	feminine
+404. 	доллар 	dollar	masculine
+405. 	сотня 	hundred	feminine
+406. 	студент 	student	masculine
+407. 	очко 	point, pip	neuter
+408. 	нож 	knife	masculine
+409. 	предмет 	object, item	masculine
+410. 	майор 	major	masculine
+411. 	деятельность 	activity, work, occupatioin	feminine
+412. 	инженер 	engineer	masculine
+413. 	программа 	program	feminine
+414. 	костюм 	costume, suit	masculine
+415. 	театр 	theater, play-house, the plays	masculine
+416. 	хвост 	tail, end, queue	masculine
+417. 	танк 	tank, container	masculine
+418. 	журнал 	magazine, journal, periodical, diary	masculine
+419. 	конь 	horse, knight (in chess)	masculine
+420. 	стихи 	poetry, verses	plural, all genders
+421. 	степень 	degree, extent, power (in mathematics)	feminine
+422. 	фигура 	figure,	feminine
+423. 	ключ 	key	masculine
+424. 	чёрт 	devil	masculine
+425. 	вагон 	carriage, coach	masculine
+426. 	культура 	culture	feminine
+427. 	боец 	fighter, private	masculine
+428. 	фильм 	film, movie, cinema	masculine
+429. 	пыль 	dust, spray	feminine
+430. 	труба 	chimney, pipe, trumpet, horn	feminine
+431. 	масса 	mass, large amount, lots	feminine
+432. 	обстоятельство 	circumstance, adverb (in grammar)	neuter
+433. 	штаб 	staff, headquaters	masculine
+434. 	слух 	hearing, rumour, hearsay	masculine
+435. 	линия 	line	feminine
+436. 	лодка 	boat	feminine
+437. 	даль 	distance (in poetry), long way off	feminine
+438. 	председатель 	chairman, president	masculine
+439. 	период 	period, age	masculine
+440. 	организм 	organism	masculine
+441. 	отдел 	department, section	masculine
+442. 	весна 	spring (season), springtime	feminine
+443. 	обед 	lunch, dinner	masculine
+444. 	значение 	meaning, significance, sense	neuter
+445. 	дно 	bottom, ground	neuter
+446. 	фотография 	photography, photo, picture	feminine
+447. 	успех 	success	masculine
+448. 	сцена 	stage, scene	feminine
+449. 	билет 	ticket, fair	masculine
+450. 	состав 	composition, structure; staff; train	masculine
+451. 	честь 	honour, regard, respect	feminine
+452. 	смех 	laughter	masculine
+453. 	СССР 	USSR, Soviet Union	masculine, abbreviation of 'union'
+454. 	способ 	method, way, mode	masculine
+455. 	зрение 	sight, eyesight, vision	neuter
+456. 	запад 	west, the West	masculine
+457. 	Германия 	Germany	feminine
+458. 	население 	population	neuter
+459. 	беда 	misfortune, trouble	feminine
+460. 	еда 	food, meal	feminine
+461. 	еврей 	Jew, Hebrew	masculine
+462. 	министр 	minister	masculine
+463. 	фирма 	firm, company	feminine
+464. 	организация 	organization	feminine
+465. 	принцип 	principle	masculine
+466. 	направление 	directon, trend	neuter
+467. 	мастер 	master, expert	masculine
+468. 	ошибка 	mistake, error	feminine
+469. 	высота 	height	feminine
+470. 	существо 	being, creature; essence	neuter
+471. 	мальчишка 	urchin, boy	masculine
+472. 	Господь 	God, the Lord	masculine
+473. 	США 	USA	plural, all genders, abbreviation of 'states'
+474. 	камера 	cell, chamber, camera	feminine
+475. 	победа 	victory	feminine
+476. 	человечество 	humanity, mankind	neuter
+477. 	фраза 	phrase, sentence	feminine
+478. 	гот 	Goth	masculine
+479. 	замок 	lock (if stress falls on 'a'); castle (if stress falls on 'o')	masculine
+480. 	рынок 	market, marketplace	masculine
+481. 	клуб 	club	masculine
+482. 	кость 	bone	feminine
+483. 	личность 	personality, person	feminine
+484. 	столица 	capital	feminine
+485. 	здоровье 	health	neuter
+486. 	попытка 	attempt, endeavour	feminine
+487. 	читатель 	reader	masculine
+488. 	шутка 	joke, trick, prank	feminine
+489. 	сотрудник 	colloborator, employee, official	masculine
+490. 	родина 	homeland, native land, home	feminine
+491. 	царь 	tsar, czar, king, ruler	masculine
+492. 	страница 	page	feminine
+493. 	скорость 	speed	feminine
+494. 	зверь 	wild animal, beast	masculine
+495. 	помочь 	singular form of leading strings (stress falls on first 'o')	feminine
+496. 	размер 	size, dimensions, rate, degree	masculine
+497. 	житель 	inhabitant, resident, dweller	masculine
+498. 	секретарь 	secretary	masculine
+499. 	Америка 	America; United States	feminine
+500. 	сигарета 	cigarette	feminine
