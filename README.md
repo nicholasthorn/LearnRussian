@@ -8,6 +8,10 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 * Deal with multiple English words getting flattened into a single Russian word (e.g. head/mind/brains -> голова)
 
+* Deal with English words that have multiple translations available (e.g. time -> время/раз/час/срок)
+
+* Limit/randomize number of words swapped - can be overwhelming if dictionary has hundreds of entries.
+
 * Some way of automatically extending the available dictionary. Google Translate API is paywalled though. :'(
 
 * Show the gender of words in the Reference dictionary. This information already exists in dictionary.txt.
