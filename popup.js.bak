@@ -10,10 +10,7 @@ function setBlacklist(status, permanence) {
 					});
 				}
 				else {
-					chrome.storage.sync.remove(url, function() {
-						chrome.tabs.reload();
-						window.close();
-					});
+					chrome.storage.sync.remove(url, function() {});
 				}
 	});
 }

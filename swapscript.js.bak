@@ -21,6 +21,7 @@ function containsFormattingChars(str) {
 function checkBlacklistThen(callback) {
 	var url = window.location.toString();
 	chrome.storage.sync.get(url, function(results) {
+		console.log(results);
 		if(null != results[url]) {
 			PAGE_BLACKLISTED = results[url].blacklist;
 		}
