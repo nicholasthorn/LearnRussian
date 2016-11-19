@@ -1,4 +1,5 @@
 ﻿var ACTIVE_DICTIONARY = {}; // contains words translated on current page
+var PAGE_BLACKLISTED = false;
 
 function replaceAll(text) {
 	var madeChanges = false;
@@ -17,7 +18,18 @@ function containsFormattingChars(str) {
 	return (str.indexOf('{') !== -1) || (str.indexOf('<') !== -1);
 }
 
+function checkBlacklistThen(callback) {
+	var url = window.location.toString();
+	chrome.storage.sync.get(url, function(results) {
+		if(null != results[url]) {
+			PAGE_BLACKLISTED = results[url].blacklist;
+		}
+		callback(results);
+	});
+}
+
 function findAndReplace() {
+	if(PAGE_BLACKLISTED) return;
 	var elements = document.getElementsByTagName('*');
 	var swappedCount = 0;
 	for(var i=0;i<elements.length;i+=1) {
@@ -38,10 +50,15 @@ function findAndReplace() {
 	}
 }
 
-$().ready(findAndReplace);
+$().ready(checkBlacklistThen(findAndReplace));
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.request == "dictionary")
-      sendResponse({dictionary: ACTIVE_DICTIONARY});
+			if(!PAGE_BLACKLISTED) {
+				sendResponse({dictionary: ACTIVE_DICTIONARY, blacklist: false});
+			}
+			else {
+				sendResponse({blacklist: true});
+			}
   });

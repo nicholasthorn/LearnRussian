@@ -3,14 +3,15 @@
 
   "name": "Russian Ты и Я!",
   "description": "This extension replaces certain English nouns on a webpage with their Russian equivalents.",
-  "version": "1.0",
+  "version": "1.1",
 
   "browser_action": {
 	"default_popup": "popup.html",
 	"default_title": "Русски Ты и Я!"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+		"storage"
   ],
   "content_scripts": [
     {
