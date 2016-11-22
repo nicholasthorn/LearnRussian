@@ -1,34 +1,39 @@
 function setBlacklist(status, permanence) {
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-		var url = tabs[0].url;
-		var obj = {};
-				obj[url] = {blacklist: status, permanent: permanence};
-				if(status) {
-					chrome.storage.sync.set(obj, function() {
-						chrome.tabs.reload();
-						window.close();
-					});
-				}
-				else {
-					chrome.storage.sync.remove(url, function() {
-						chrome.tabs.reload();
-						window.close();
-					});
-				}
+		var url = new URL(tabs[0].url);
+		
+		if(status) {
+			var obj = {};
+			obj[url.hostname] = {blacklist: status, permanent: permanence};
+			chrome.storage.sync.set(obj, function() {
+				chrome.tabs.reload();
+				window.close();
+			});
+		}
+		else {
+			chrome.storage.sync.remove(url.hostname, function() {
+				chrome.tabs.reload();
+				window.close();
+			});
+		}
 	});
 }
 
 document.addEventListener('DOMContentLoaded', function() {
 	var black_button = document.getElementById('blacklist_button');
 	var white_button = document.getElementById('whitelist_button');
+	var blackonce_button = document.getElementById('blackonce_button');
 	
 	black_button.addEventListener('click', function() {
-		setBlacklist(true, false);
-		
+		setBlacklist(true, true);
 	});
 	
 	white_button.addEventListener('click', function() {
 		setBlacklist(false, false);
+	});
+	
+	blackonce_button.addEventListener('click', function() {
+		setBlacklist(true, false);
 	});
 
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -41,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			
 			if(response.blacklist) {
 				black_button.style.display = 'none';
-				screen.innerHTML += "The extension has been disabled on this page.<br>";
+				blackonce_button.style.display = 'none';
+				screen.innerHTML += "The extension is currently disabled here.<br>";
 			}
 			else {
 				white_button.style.display = 'none';
