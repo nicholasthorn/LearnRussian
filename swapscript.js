@@ -19,10 +19,13 @@ function containsFormattingChars(str) {
 }
 
 function checkBlacklistThen(callback) {
-	var url = window.location.toString();
+	var url = window.location.hostname;
 	chrome.storage.sync.get(url, function(results) {
 		if(null != results[url]) {
 			PAGE_BLACKLISTED = results[url].blacklist;
+			if(!results[url].permanent) {
+				chrome.storage.sync.remove(url);
+			}
 		}
 		callback(results);
 	});
