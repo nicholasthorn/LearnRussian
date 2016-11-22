@@ -4,7 +4,7 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 ## Possible future development
 
-* Ability to blacklist websites or temporarily disable the extension would be really useful.
+* ~~Ability to blacklist websites or temporarily disable the extension would be really useful.~~ fully implemented
 
 * Deal with multiple English words getting flattened into a single Russian word (e.g. head/mind/brains -> голова)
 
