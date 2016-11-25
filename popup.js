@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				var dict = response.dictionary;
 				var keys = Object.keys(dict).sort();
 				for(var i=0;i<keys.length;i++) {
-					screen.innerHTML += dict[keys[i]][1] + " \"" + dict[keys[i]][0] + "\"<br>";
+					screen.innerHTML += dict[keys[i]][1] + " \"" + dict[keys[i]][0] + "\" - " + dict[keys[i]][2] + "<br>";
 				}
 			}
 		});

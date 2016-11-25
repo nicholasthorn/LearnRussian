@@ -1,3 +1,9 @@
 #dictionary {
-	width: 160px;
+	width: 260px;
+}
+
+.blacklist {
+	color: blue;
+	cursor: pointer;
+	cursor: hand;
 }
