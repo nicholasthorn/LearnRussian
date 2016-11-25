@@ -1,15 +1,14 @@
-#dictionary {
+.rtiy__dictionary {
 	width: 300px;
 }
 
-.blacklist {
+.rtiy__blacklist {
 	color: blue;
 	cursor: pointer;
 	cursor: hand;
 }
 
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
