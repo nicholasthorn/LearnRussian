@@ -54,7 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
 				var dict = response.dictionary;
 				var keys = Object.keys(dict).sort();
 				for(var i=0;i<keys.length;i++) {
-					screen.innerHTML += dict[keys[i]][1] + " \"" + dict[keys[i]][0] + "\" - " + dict[keys[i]][2] + "<br>";
+					var row = screen.insertRow();
+					row.insertCell(0).innerHTML = dict[keys[i]][1];
+					row.insertCell(1).innerHTML = dict[keys[i]][0];
+					row.insertCell(2).innerHTML = dict[keys[i]][2];
+					//screen.innerHTML += "<tr><td>" + dict[keys[i]][1] + "</td><td>" + dict[keys[i]][0] + "</td><td>" + dict[keys[i]][2] + "</td></tr>\n";
 				}
 			}
 		});

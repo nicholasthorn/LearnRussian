@@ -8,7 +8,14 @@ function replaceAll(text) {
 		if(text.search(re) !== -1) {
 			madeChanges = true;
 			text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
-			ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i];
+			if(ACTIVE_DICTIONARY.hasOwnProperty(DICTIONARY[i][1])) {
+				var words = ACTIVE_DICTIONARY[DICTIONARY[i][1]][0].split(/, /);
+				if(words.indexOf(DICTIONARY[i][0]) === -1) {
+					ACTIVE_DICTIONARY[DICTIONARY[i][1]][0] += ", " + DICTIONARY[i][0];
+				}
+			} else {
+				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i];
+			}
 		}
 	}
 	return madeChanges ? text : false;
@@ -19,6 +26,7 @@ function containsFormattingChars(str) {
 }
 
 function checkBlacklistThen(callback) {
+	time = Date.now();
 	var url = window.location.hostname;
 	chrome.storage.sync.get(url, function(results) {
 		if(null != results[url]) {
@@ -35,6 +43,8 @@ function findAndReplace() {
 	if(PAGE_BLACKLISTED) return;
 	var elements = document.getElementsByTagName('*');
 	var swappedCount = 0;
+	
+	//Though this method may seem a bit ugly, it is orders of magnitude faster than jQuery shorthands like .find()
 	for(var i=0;i<elements.length;i+=1) {
 		var element = elements[i];
 		
@@ -57,7 +67,7 @@ $().ready(checkBlacklistThen(findAndReplace));
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    if (request.request == "dictionary")
+    if (request.request === "dictionary")
 			if(!PAGE_BLACKLISTED) {
 				sendResponse({dictionary: ACTIVE_DICTIONARY, blacklist: false});
 			}
