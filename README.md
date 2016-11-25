@@ -4,9 +4,9 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 ## Possible future development
 
-* ~~Ability to blacklist websites or temporarily disable the extension would be really useful.
+* ~~Ability to blacklist websites or temporarily disable the extension would be really useful.~~
 
-* ~~Deal with multiple English words getting flattened into a single Russian word (e.g. head/mind/brains -> голова)
+* ~~Deal with multiple English words getting flattened into a single Russian word (e.g. head/mind/brains -> голова)~~
 
 * Deal with English words that have multiple translations available (e.g. time -> время/раз/час/срок)
 
@@ -16,7 +16,7 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 * Some way of automatically extending the available dictionary. Google Translate API is paywalled though. :'(
 
-* ~~Show the gender of words in the Reference dictionary. This information already exists in dictionary.txt.
+* ~~Show the gender of words in the Reference dictionary. This information already exists in dictionary.txt.~~
 
 * Hover to see translation, for quicker help than checking the dictionary.
 
