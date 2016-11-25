@@ -26,7 +26,6 @@ function containsFormattingChars(str) {
 }
 
 function checkBlacklistThen(callback) {
-	time = Date.now();
 	var url = window.location.hostname;
 	chrome.storage.sync.get(url, function(results) {
 		if(null != results[url]) {
