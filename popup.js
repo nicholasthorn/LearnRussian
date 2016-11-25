@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 		chrome.tabs.sendMessage(tabs[0].id, {request: "dictionary"}, function(response) {
-			var screen = document.getElementById('dictionary');
+			var screen = document.getElementById('rtiy__dictionary');
 			if(response == null) {
 				screen.innerHTML += "Something went wrong. Try reloading the page.<br>";
 				return;
@@ -54,7 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				var dict = response.dictionary;
 				var keys = Object.keys(dict).sort();
 				for(var i=0;i<keys.length;i++) {
-					screen.innerHTML += dict[keys[i]][1] + " \"" + dict[keys[i]][0] + "\"<br>";
+					var row = screen.insertRow();
+					row.insertCell(0).innerHTML = dict[keys[i]][1];
+					row.insertCell(1).innerHTML = dict[keys[i]][0];
+					row.insertCell(2).innerHTML = dict[keys[i]][2];
 				}
 			}
 		});

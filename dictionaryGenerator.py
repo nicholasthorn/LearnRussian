@@ -4,6 +4,6 @@ dict.write('var DICTIONARY = [')
 
 for line in f:
 	words = line.split(',')
-	dict.write('[\"' + words[0] + '\",\"' + words[1].rstrip() + '\"],\n')
+	dict.write('[\"' + words[0].rstrip() + '\",\"' + words[1].rstrip() + '\",\"' + words[2].rstrip() + '\"],\n')
 	
 dict.write('];')
