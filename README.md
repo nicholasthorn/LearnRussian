@@ -18,7 +18,7 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 * ~~Show the gender of words in the Reference dictionary. This information already exists in dictionary.txt.~~
 
-* Hover to see translation, for quicker help than checking the dictionary.
+* ~~Right-click to see translation, for quicker help than checking the dictionary.~~
 
 * Very easily altered to support other languages - simply edit dictionary.js.
 
