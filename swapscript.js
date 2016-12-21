@@ -62,15 +62,35 @@ function findAndReplace() {
 	}
 }
 
+function getTranslations(text) {
+	var words = text.split(/[,.!?'":;\- ]/); // because we're searching for Cyrillic chars, can't use \W
+	var newText = "";
+	var hasWord = false;
+	for(var i=0;i<words.length;i++) {
+		if(ACTIVE_DICTIONARY.hasOwnProperty(words[i])) {
+			if(hasWord) newText += "; ";
+			newText += ACTIVE_DICTIONARY[words[i]][1] + ": " + ACTIVE_DICTIONARY[words[i]][0];
+			hasWord = true;
+		}
+	}
+	return hasWord ? newText : "Highlight text containing Russian words to see their translation.";
+}
+
 $().ready(checkBlacklistThen(findAndReplace));
+
+document.addEventListener("mouseup", function(ev) {
+	chrome.runtime.sendMessage({request: "updateContext", newText: getTranslations(window.getSelection().toString())});
+});
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    if (request.request === "dictionary")
+		//popup
+    if (request.request === "dictionary") {
 			if(!PAGE_BLACKLISTED) {
 				sendResponse({dictionary: ACTIVE_DICTIONARY, blacklist: false});
 			}
 			else {
 				sendResponse({blacklist: true});
 			}
+		}
   });
