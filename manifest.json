@@ -11,8 +11,13 @@
   },
   "permissions": [
     "activeTab",
-		"storage"
+		"storage",
+		"contextMenus"
   ],
+	"background": {
+    "scripts": ["contextMenuEvent.js"],
+		"persistent": false
+  },
   "content_scripts": [
     {
 	  "matches": ["<all_urls>"],
