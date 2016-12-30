@@ -1,5 +1,12 @@
 ﻿var ACTIVE_DICTIONARY = {}; // contains words translated on current page
 var PAGE_BLACKLISTED = false;
+var RUSSIAN_WORD = "";
+
+function maintainCaps(match, p1, p2, p3) {
+	if(p2.toUpperCase() === p2) return p1 + RUSSIAN_WORD.toUpperCase() + p3;
+	if(p2.charAt(0) === p2.charAt(0).toUpperCase()) return p1 + RUSSIAN_WORD.charAt(0).toUpperCase() + RUSSIAN_WORD.slice(1) + p3;
+	return p1 + RUSSIAN_WORD + p3;
+}
 
 function replaceAll(text) {
 	var madeChanges = false;
@@ -7,7 +14,9 @@ function replaceAll(text) {
 		var re = new RegExp("(\\s|^)(" + DICTIONARY[i][0] + ")(\\W|$)", "gi");
 		if(text.search(re) !== -1) {
 			madeChanges = true;
-			text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
+			RUSSIAN_WORD = DICTIONARY[i][1];
+			//text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
+			text = text.replace(re, maintainCaps);
 			if(ACTIVE_DICTIONARY.hasOwnProperty(DICTIONARY[i][1])) {
 				var words = ACTIVE_DICTIONARY[DICTIONARY[i][1]][0].split(/, /);
 				if(words.indexOf(DICTIONARY[i][0]) === -1) {
@@ -63,7 +72,7 @@ function findAndReplace() {
 }
 
 function getTranslations(text) {
-	var words = text.split(/[,.!?'":;\- ]/); // because we're searching for Cyrillic chars, can't use \W
+	var words = text.toLowerCase().split(/[,.!?'":;\- ()]/); // because we're searching for Cyrillic chars, can't use \W
 	var newText = "";
 	var hasWord = false;
 	for(var i=0;i<words.length;i++) {
