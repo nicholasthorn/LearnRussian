@@ -10,7 +10,8 @@ matter,дело,neuter
 time,раз,masculine
 once,раз,masculine
 since,раз,masculine
-eye; sight,глаз,masculine
+eye,глаз,masculine
+sight,глаз,masculine
 life,жизнь,feminine
 day,день,masculine
 head,голова,feminine
@@ -20,8 +21,10 @@ friend,друг,masculine
 house,дом,masculine
 home,дом,masculine
 word,слово,neuter
-place; seat,место,neuter
-face; person,лицо,neuter
+place,место,neuter
+seat,место,neuter
+face,лицо,neuter
+person,лицо,neuter
 side,сторона,feminine
 party,сторона,feminine
 foot,нога,feminine
@@ -41,7 +44,8 @@ town,город,masculine
 city,город,masculine
 water,вода,feminine
 table,стол,masculine
-desk; board,стол,masculine
+desk,стол,masculine
+board,стол,masculine
 child,ребёнок,masculine
 kid,ребёнок,masculine
 infant,ребёнок,masculine
@@ -76,7 +80,8 @@ moment,минута,feminine
 wife,жена,feminine
 truth,правда,feminine
 country,страна,feminine
-light; world,свет,masculine
+light,свет,masculine
+world,свет,masculine
 mother,мать,feminine
 comrade,товарищ,masculine
 friend,товарищ,masculine
@@ -96,14 +101,16 @@ soul,душа,feminine
 spirit,душа,feminine
 morning,утро,neuter
 evening,вечер,masculine
-floor; sex,пол,masculine
+floor,пол,masculine
+sex,пол,masculine
 people,народ,masculine
 nation,народ,masculine
 shoulder,плечо,neuter
 upper arm,плечо,neuter
 god,бог,masculine
 look,взгляд,masculine
-glance; view,взгляд,masculine
+glance,взгляд,masculine
+view,взгляд,masculine
 finger,палец,masculine
 toe,палец,masculine
 Russia,Россия,feminine
@@ -114,7 +121,8 @@ thought,мысль,feminine
 idea,мысль,feminine
 son,сын,masculine
 forest,лес,masculine
-time; pore,пора,feminine
+time,пора,feminine
+pore,пора,feminine
 name,имя,neuter
 talk,разговор,masculine
 conversation,разговор,masculine
@@ -224,7 +232,8 @@ fire,огонь,masculine
 writer,писатель,masculine
 army,армия,feminine
 state,состояние,neuter
-condition; fortune,состояние,neuter
+condition,состояние,neuter
+fortune,состояние,neuter
 tooth,зуб,masculine
 line,очередь,feminine
 queue,очередь,feminine
@@ -242,7 +251,8 @@ hill,гора,feminine
 physician,врач,masculine
 doctor,врач,masculine
 border,край,masculine
-edge; land,край,masculine
+edge,край,masculine
+land,край,masculine
 country,край,masculine
 river,река,feminine
 measure,мера,feminine
@@ -259,7 +269,8 @@ cause,причина,feminine
 reason,причина,feminine
 motive,причина,feminine
 line,черта,feminine
-boundary; trait,черта,feminine
+boundary,черта,feminine
+trait,черта,feminine
 girl,девочка,feminine
 little girl,девочка,feminine
 hair,волос,masculine
@@ -290,7 +301,8 @@ posture,положение,neuter
 condition,положение,neuter
 state,положение,neuter
 tie,связь,feminine
-bond; connection,связь,feminine
+bond,связь,feminine
+connection,связь,feminine
 relation,связь,feminine
 class,класс,masculine
 goal,цель,feminine
@@ -366,7 +378,8 @@ account,счет,masculine
 kitchen,кухня,feminine
 decision,решение,neuter
 conclusion,решение,neuter
-bride; young (as an adjective),молодая,feminine
+bride,молодая,feminine
+young (as an adjective),молодая,feminine
 novel,роман,masculine
 romance,роман,masculine
 company,компания,feminine
@@ -414,7 +427,8 @@ odour,запах,masculine
 scent,запах,masculine
 role,роль,feminine
 growth,рост,masculine
-increase; height,рост,masculine
+increase,рост,masculine
+height,рост,masculine
 nature,природа,feminine
 dot,точка,feminine
 point,точка,feminine
@@ -463,7 +477,8 @@ advice,совет,masculine
 fool,дурак,masculine
 idiot,дурак,masculine
 union,союз,masculine
-alliance; conjunction,союз,masculine
+alliance,союз,masculine
+conjunction,союз,masculine
 summer,лето,neuter
 border,граница,feminine
 colour,цвет,masculine
@@ -499,7 +514,8 @@ brain,мозг,masculine
 pleasure,удовольствие,neuter
 will,воля,feminine
 oblast,область,feminine
-province; field,область,feminine
+province,область,feminine
+field,область,feminine
 roof,крыша,feminine
 lady,дама,feminine
 partner,дама,feminine
@@ -522,7 +538,8 @@ circle,круг,masculine
 dad,папа,masculine
 daddy,папа,masculine
 occastion,повод,masculine
-reason; bridle,повод,masculine
+reason,повод,masculine
+bridle,повод,masculine
 camp,лагерь,masculine
 bird,птица,feminine
 ship,корабль,masculine
@@ -539,7 +556,8 @@ vodka,водка,feminine
 darkness,темнота,feminine
 station,станция,feminine
 citizen,гражданин,masculine
-team; command,команда,feminine
+team,команда,feminine
+command,команда,feminine
 disease,заболевание,neuter
 illness,заболевание,neuter
 stomach,живот,masculine
@@ -565,7 +583,7 @@ factory,завод,masculine
 fist,кулак,masculine
 glass,стакан,masculine
 mouth,рот,masculine
-(medical) treatment,лечение,neuter
+treatment,лечение,neuter
 cure,лечение,neuter
 day,сутки,plural, all genders
 twenty-four hours,сутки,plural, all genders
@@ -628,7 +646,7 @@ item,предмет,masculine
 major,майор,masculine
 activity,деятельность,feminine
 work,деятельность,feminine
-occupatioin,деятельность,feminine
+occupation,деятельность,feminine
 engineer,инженер,masculine
 program,программа,feminine
 costume,костюм,masculine
@@ -673,7 +691,7 @@ mass,масса,feminine
 large amount,масса,feminine
 lots,масса,feminine
 circumstance,обстоятельство,neuter
-adverb (in grammar),обстоятельство,neuter
+adverb,обстоятельство,neuter
 staff,штаб,masculine
 headquaters,штаб,masculine
 hearing,слух,masculine
@@ -690,7 +708,7 @@ age,период,masculine
 organism,организм,masculine
 department,отдел,masculine
 section,отдел,masculine
-spring (season),весна,feminine
+spring,весна,feminine
 springtime,весна,feminine
 lunch,обед,masculine
 dinner,обед,masculine
@@ -708,7 +726,9 @@ scene,сцена,feminine
 ticket,билет,masculine
 fair,билет,masculine
 composition,состав,masculine
-structure; staff; train,состав,masculine
+structure,состав,masculine
+staff,состав,masculine
+train,состав,masculine
 honour,честь,feminine
 regard,честь,feminine
 respect,честь,feminine
@@ -744,7 +764,8 @@ mistake,ошибка,feminine
 error,ошибка,feminine
 height,высота,feminine
 being,существо,neuter
-creature; essence,существо,neuter
+creature,существо,neuter
+essence,существо,neuter
 urchin,мальчишка,masculine
 boy,мальчишка,masculine
 God,Господь,masculine
@@ -759,7 +780,8 @@ mankind,человечество,neuter
 phrase,фраза,feminine
 sentence,фраза,feminine
 Goth,гот,masculine
-lock (if stress falls on 'a'); castle (if stress falls on 'o'),замок,masculine
+lock,замок,masculine
+castle,замок,masculine
 market,рынок,masculine
 marketplace,рынок,masculine
 club,клуб,masculine
@@ -797,5 +819,6 @@ inhabitant,житель,masculine
 resident,житель,masculine
 dweller,житель,masculine
 secretary,секретарь,masculine
-America; United States,Америка,feminine
+America,Америка,feminine
+United States,Америка,feminine
 cigarette,сигарета,feminine

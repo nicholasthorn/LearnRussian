@@ -1,13 +1,13 @@
 ﻿{
   "manifest_version": 2,
 
-  "name": "Russian Ты и Я!",
+  "name": "Russian Лексика Tool",
   "description": "This extension replaces certain English nouns on a webpage with their Russian equivalents.",
-  "version": "1.3",
+  "version": "1.5",
 
   "browser_action": {
 	"default_popup": "popup.html",
-	"default_title": "Русски Ты и Я!"
+	"default_title": "Russian Лексика Tool"
   },
   "permissions": [
     "activeTab",
@@ -22,5 +22,9 @@
     {
 	  "matches": ["<all_urls>"],
       "js": ["jquery-3.1.1.min.js", "dictionary.js", "swapscript.js"]
-    }]
+    }],
+	"icons": { "16": "200icon.png",
+		"48": "200icon.png",
+		"128": "200icon.png"
+	}
 }
