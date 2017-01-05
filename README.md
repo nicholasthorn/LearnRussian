@@ -10,7 +10,7 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 * ~~Maintain capitalization after translation.~~
 
-* Some way of automatically extending the available dictionary - perhaps allowing the user to do so.
+* Some way of automatically extending the available dictionary - perhaps allowing the user to do so. Blacklisting/removing words also requested.
 
 * ~~Show the gender of words in the Reference dictionary. This information already exists in dictionary.txt.~~
 
@@ -21,3 +21,9 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 * Click in dictionary to get more info, e.g. get a pronunciation audio clip, word conjugations, etc.
 
 * Click in dictionary to highlight words on page / click on page to highlight in dictionary
+
+* POS-tagging to identify nouns and not incorrectly translate verbs.
+
+* Other browsers? Probably more effort than it's worth considering Chrome popularity.
+
+* Limit number of words translated per page (requested).
