@@ -51,12 +51,17 @@ function findAndReplace() {
 	if(PAGE_BLACKLISTED) return;
 	var elements = document.getElementsByTagName('*');
 	var swappedCount = 0;
+	var startTime = Date.now();
 	
 	//Though this method may seem a bit ugly, it is orders of magnitude faster than jQuery shorthands like .find()
 	for(var i=0;i<elements.length;i+=1) {
 		var element = elements[i];
 		
 		for(var j=0;j<element.childNodes.length;j++) {
+			if(Date.now() - startTime > 5000) { // If translating takes more than 5 seconds, abort!
+				console.log("Russian Лексика Tool took more than 5 seconds to alter this page.");
+				return; 
+			}
 			var node = element.childNodes[j];
 			if(node.nodeType === 3) { // Type 3 = Text
 				var text = node.nodeValue;
