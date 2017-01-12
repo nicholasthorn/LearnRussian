@@ -3,7 +3,7 @@
 
   "name": "ЛЕКСИКА! - Russian Vocabulary Tool",
   "description": "This extension replaces certain English nouns on a webpage with their Russian equivalents.",
-  "version": "1.5.1",
+  "version": "1.5.2",
 
   "browser_action": {
 	"default_popup": "popup.html",

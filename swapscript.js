@@ -15,7 +15,6 @@ function replaceAll(text) {
 		if(text.search(re) !== -1) {
 			madeChanges = true;
 			RUSSIAN_WORD = DICTIONARY[i][1];
-			//text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
 			text = text.replace(re, maintainCaps);
 			if(ACTIVE_DICTIONARY.hasOwnProperty(DICTIONARY[i][1])) {
 				var words = ACTIVE_DICTIONARY[DICTIONARY[i][1]][0].split(/, /);
@@ -23,7 +22,7 @@ function replaceAll(text) {
 					ACTIVE_DICTIONARY[DICTIONARY[i][1]][0] += ", " + DICTIONARY[i][0];
 				}
 			} else {
-				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i];
+				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i].slice();
 			}
 		}
 	}
@@ -74,6 +73,7 @@ function findAndReplace() {
 			}
 		}
 	}
+	console.log("ЛЕКСИКА DEBUG: runtime " + (Date.now() - startTime)/1000 + " seconds.");
 }
 
 function getTranslations(text) {
