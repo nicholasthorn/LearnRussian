@@ -15,7 +15,6 @@ function replaceAll(text) {
 		if(text.search(re) !== -1) {
 			madeChanges = true;
 			RUSSIAN_WORD = DICTIONARY[i][1];
-			//text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
 			text = text.replace(re, maintainCaps);
 			if(ACTIVE_DICTIONARY.hasOwnProperty(DICTIONARY[i][1])) {
 				var words = ACTIVE_DICTIONARY[DICTIONARY[i][1]][0].split(/, /);
@@ -23,7 +22,7 @@ function replaceAll(text) {
 					ACTIVE_DICTIONARY[DICTIONARY[i][1]][0] += ", " + DICTIONARY[i][0];
 				}
 			} else {
-				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i];
+				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i].slice();
 			}
 		}
 	}
@@ -59,7 +58,7 @@ function findAndReplace() {
 		
 		for(var j=0;j<element.childNodes.length;j++) {
 			if(Date.now() - startTime > 5000) { // If translating takes more than 5 seconds, abort!
-				console.log("Russian Лексика Tool took more than 5 seconds to alter this page.");
+				//console.log("Russian Лексика Tool took more than 5 seconds to alter this page.");
 				return; 
 			}
 			var node = element.childNodes[j];
@@ -74,6 +73,7 @@ function findAndReplace() {
 			}
 		}
 	}
+	//console.log("ЛЕКСИКА DEBUG: runtime " + (Date.now() - startTime)/1000 + " seconds.");
 }
 
 function getTranslations(text) {
