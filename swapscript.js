@@ -1,8 +1,25 @@
 ﻿var ACTIVE_DICTIONARY = {}; // contains words translated on current page
 var PAGE_BLACKLISTED = false;
-var RUSSIAN_WORD = "";
+var PERSONAL_PRONOUNS = ["I ", "YOU ", "HE ", "SHE ", "IT ", "THEY ", "WE ", "ME ", "HIM ", "US ", "THEM "];
+/*
+HER isn't included since it's more likely to be possessive
+*/
 
+function compareSet(word, set) {
+	for(var i=0;i<set.length;i++) {
+		if(word === set[i]) return true;
+	}
+	return false;
+}
+
+var RECENT_CHANGE = false;
+var RUSSIAN_WORD = "";
 function maintainCaps(match, p1, p2, p3) {
+	if(compareSet(p1.toUpperCase(), PERSONAL_PRONOUNS)) {
+		//console.log("ЛЕКСИКА DEBUG: " + p1 + p2 + p3);
+		return p1 + p2 + p3;
+	}
+	RECENT_CHANGE = true;
 	if(p2.toUpperCase() === p2) return p1 + RUSSIAN_WORD.toUpperCase() + p3;
 	if(p2.charAt(0) === p2.charAt(0).toUpperCase()) return p1 + RUSSIAN_WORD.charAt(0).toUpperCase() + RUSSIAN_WORD.slice(1) + p3;
 	return p1 + RUSSIAN_WORD + p3;
@@ -11,24 +28,51 @@ function maintainCaps(match, p1, p2, p3) {
 function replaceAll(text) {
 	var madeChanges = false;
 	for(var i=0;i<DICTIONARY.length;i++) {
-		var re = new RegExp("(\\s|^)(" + DICTIONARY[i][0] + ")(\\W|$)", "gi");
-		if(text.search(re) !== -1) {
+		//var re = new RegExp("(\\s|^)(" + DICTIONARY[i][0] + ")(\\W|$)", "gi");
+		//console.log(DICTIONARY[i]);
+		var re = new RegExp("(\\w+\\s|^|\\W)(" + DICTIONARY[i][0] + ")(\\W|$)", "gi");
+		RUSSIAN_WORD = DICTIONARY[i][1];
+		RECENT_CHANGE = false;
+		text = text.replace(re, maintainCaps);
+		if(RECENT_CHANGE) {
 			madeChanges = true;
-			RUSSIAN_WORD = DICTIONARY[i][1];
-			//text = text.replace(re, "$1" + DICTIONARY[i][1] + "$3");
-			text = text.replace(re, maintainCaps);
+			if(RUSSIAN_WORD === "none") continue;
 			if(ACTIVE_DICTIONARY.hasOwnProperty(DICTIONARY[i][1])) {
 				var words = ACTIVE_DICTIONARY[DICTIONARY[i][1]][0].split(/, /);
 				if(words.indexOf(DICTIONARY[i][0]) === -1) {
 					ACTIVE_DICTIONARY[DICTIONARY[i][1]][0] += ", " + DICTIONARY[i][0];
 				}
 			} else {
-				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i];
+				ACTIVE_DICTIONARY[DICTIONARY[i][1]] = DICTIONARY[i].slice();
 			}
 		}
 	}
 	return madeChanges ? text : false;
 }
+
+
+
+/*function replaceAll(text) {
+	var madeChanges = false;
+	var words = text.split(' ');
+	var newText = "";
+	for(var i=0;i<words.length;i++) {
+		if(i !== words.length-1 && compareSet(words[i].toUpperCase(), ["I", "YOU", "HE", "SHE", "IT", "THEY", "WE", "ME", "HIM", "HER", "US", "THEM"])) {
+			newText += words[i] + ' ' + words[i+1];
+			i++; // skip the next word, it cannot be a noun
+			continue;
+		}
+		var currentWord = words[i].toLowerCase();
+		for(var j=0;j<DICTIONARY.length;j++) {
+			if(currentWord === DICTIONARY[i][0].toLowerCase()) {
+				
+			}
+		}
+		
+		
+	}
+	return madeChanges ? newText : false;
+}*/
 
 function containsFormattingChars(str) {
 	return (str.indexOf('{') !== -1) || (str.indexOf('<') !== -1);
@@ -59,7 +103,7 @@ function findAndReplace() {
 		
 		for(var j=0;j<element.childNodes.length;j++) {
 			if(Date.now() - startTime > 5000) { // If translating takes more than 5 seconds, abort!
-				console.log("Russian Лексика Tool took more than 5 seconds to alter this page.");
+				console.log("ЛЕКСИКА DEBUG: runtime aborted at " + (Date.now() - startTime)/1000 + " seconds.");
 				return; 
 			}
 			var node = element.childNodes[j];
@@ -74,6 +118,7 @@ function findAndReplace() {
 			}
 		}
 	}
+	console.log("ЛЕКСИКА DEBUG: runtime " + (Date.now() - startTime)/1000 + " seconds.");
 }
 
 function getTranslations(text) {
