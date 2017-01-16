@@ -19,6 +19,19 @@ function setBlacklist(status, permanence) {
 	});
 }
 
+function setProperty(settingName, settingValue) {
+	var obj = {};
+	obj[settingName] = settingValue;
+	chrome.storage.sync.set(obj);
+}
+
+function setVisualSetting(settingName, settingValue) {
+	var settingButtons = document.getElementsByName(settingName);
+	for(var i=0;i<settingButtons.length;i++) {
+			settingButtons[i].checked = settingButtons[i].value === settingValue;
+	}
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 	var black_button = document.getElementById('blacklist_button');
 	var white_button = document.getElementById('whitelist_button');
@@ -34,6 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	blackonce_button.addEventListener('click', function() {
 		setBlacklist(true, false);
+	});
+	
+	
+	
+	var densitySettings = document.getElementsByName('density');
+	var difficultySettings = document.getElementsByName('difficulty');
+	document.getElementById('rtiy__settings').addEventListener('change', function() {
+		var density;
+    for(var i=0;i<densitySettings.length;i++) {
+			if(densitySettings[i].checked) density = densitySettings[i].value;
+		}
+		var difficulty;
+		for(var i=0;i<difficultySettings.length;i++) {
+			if(difficultySettings[i].checked) difficulty = difficultySettings[i].value;
+		}
+		setProperty('density', density);
+		setProperty('difficulty', difficulty);
 	});
 
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -60,6 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					row.insertCell(2).innerHTML = dict[keys[i]][2];
 				}
 			}
+			setVisualSetting('density', response.density);
+			setVisualSetting('difficulty', response.difficulty);
 		});
 	});
 });
