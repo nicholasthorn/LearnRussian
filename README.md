@@ -2,6 +2,9 @@
 
 A simple Chrome extension to help me extend my Russian vocabulary. The extension swaps English nouns on a webpage with their Russian equivalents. Clicking the Extension popup buttons brings up a dictionary with all the relevants words on the current page.
 
+## In the Chrome Store
+[Chrome Web Store: ЛЕКСИКА! - Russian Vocabulary Tool](https://chrome.google.com/webstore/detail/%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D0%BA%D0%B0-russian-vocabular/nhkfellofhhgdjhhlpmjpfkakobinldf)
+
 ## Possible future development
 
 * ~~Ability to blacklist websites or temporarily disable the extension would be really useful.~~
@@ -26,4 +29,4 @@ A simple Chrome extension to help me extend my Russian vocabulary. The extension
 
 * Other browsers? Probably more effort than it's worth considering Chrome popularity.
 
-* Limit number of words translated per page (requested).
+* ~~Limit number of words translated per page (requested).~~
