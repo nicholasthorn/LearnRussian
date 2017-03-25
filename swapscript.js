@@ -4,7 +4,7 @@ var DENSITY_LEVEL = 'high';
 var DIFFICULTY_LEVEL = 'hard';
 var SWAPPED_COUNT = 0;
 
-var RUSSIAN_WORD = "";
+var RUSSIAN_WORD = ""; // a state var is used because the built-in string.replace only allows 2 arguments
 function maintainCaps(match, p1, p2, p3) {
 	SWAPPED_COUNT++;
 	if(p2.toUpperCase() === p2) return p1 + RUSSIAN_WORD.toUpperCase() + p3;
@@ -25,7 +25,7 @@ function replaceFromDictionary(text, dictionary) {
 					ACTIVE_DICTIONARY[dictionary[i][1]][0] += ", " + dictionary[i][0];
 				}
 			} else {
-				ACTIVE_DICTIONARY[dictionary[i][1]] = dictionary[i].slice();
+				ACTIVE_DICTIONARY[dictionary[i][1]] = dictionary[i].slice(); // .slice() to make a shallow copy, copied reference = bad
 			}
 			if(DENSITY_LEVEL === 'low') return text;
 			if(madeChanges && DENSITY_LEVEL === 'medium') return text;
@@ -97,10 +97,13 @@ function findAndReplace() {
 }
 
 function getTranslations(text) {
-	var words = text.toLowerCase().split(/[,.!?'":;\- ()]/); // because we're searching for Cyrillic chars, can't use \W
+	var words = text.toLowerCase().split(/[^А-Яа-яЁё]/); // all Russian Cyrillic alphabet chars
+	var seenWords = {} // hash table to avoid duplicates
 	var newText = "";
 	var hasWord = false;
 	for(var i=0;i<words.length;i++) {
+		if(seenWords.hasOwnProperty(words[i])) continue;
+		seenWords[words[i]] = true;
 		if(ACTIVE_DICTIONARY.hasOwnProperty(words[i])) {
 			if(hasWord) newText += "; ";
 			newText += ACTIVE_DICTIONARY[words[i]][1] + ": " + ACTIVE_DICTIONARY[words[i]][0];
