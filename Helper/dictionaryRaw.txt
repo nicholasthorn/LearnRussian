@@ -180,9 +180,9 @@
 180. 	связь 	tie, bond, connection, relation	feminine
 181. 	класс 	class	masculine
 182. 	цель 	goal, object, target	feminine
-183. 	знать 	aristocracy, nobility, the élite	feminine
+183. 	знать 	aristocracy, nobility, the elite	feminine
 184. 	профессор 	professor	masculine
-185. 	господин 	gentleman, Mr.	masculine
+185. 	господин 	gentleman	masculine
 186. 	счастье 	happiness, luck	neuter
 187. 	дух 	spirit	masculine
 188. 	план 	plan	masculine
